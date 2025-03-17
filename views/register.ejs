@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs')%>
+        <link rel="stylesheet" href="/public/css/register-styles.css">
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs')%>
+        <div class="register-container">
+            <h2>Register</h2>
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs')%>
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs')%>
+        <div class="contact-form">
+            <h1>Feel free to contact us if you have any questions or feedback.</h1>
+            <form method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+    </body>
+</html>

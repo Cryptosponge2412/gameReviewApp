@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Reviews Container */
+.reviews-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+/* Reviews List */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Review Card */
+.review-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-card .platform {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.review-card .review-text {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.review-card .timestamp {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+}
+
+/* No Reviews Message */
+.reviews-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+.reviews-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.reviews-container a:hover {
+    text-decoration: underline;
+}

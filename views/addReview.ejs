@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs')%>
+        <link rel="stylesheet" href="/public/css/review-styles.css">
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs')%>
+        <div class="review-container">
+            <h2>Game Reviews</h2>
+            <form method="POST" class="review-form">
+                <div class="form-group">
+                    <label for="platform">Platform</label>
+                    <input type="text" id="platform" placeholder="Enter Platform Type" name="platform" required>
+                </div>
+                <div class="form-group">
+                    <label for="gameName">Game Name</label>
+                    <input type="text" id="gameName" placeholder="Enter Game Name" name="gameName" required>
+                </div>
+                <div class="form-group">
+                    <label for="review">Review</label>
+                    <textarea id="review" placeholder="Enter your review" name="review" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

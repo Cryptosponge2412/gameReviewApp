@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs')%>
+            <link rel="stylesheet" href="/public/css/reviews-styles.css">
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs')%>
+        <div class="reviews-container">
+            <h2>Game Reviews</h2>
+            <% if (reviews.length > 0) { %>
+                <div class="reviews-list">
+                    <% reviews.forEach(function(review) { %>
+                        <div class="review-card">
+                            <h3><%= review.gameName %></h3>
+                            <p class="platform"><strong>Platform:</strong> <%= review.platform %></p>
+                            <p class="review-text"><%= review.review %></p>
+                            <p class="timestamp"><em>Posted on: <%= review.created_at.toLocaleString() %></em></p>
+                        </div>
+                    <% }); %>
+                </div>
+            <% } else { %>
+                <p>No reviews found. Be the first to <a href="/addReview">add a review</a>!</p>
+            <% } %>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <%- include('partials/header1.ejs')%>
+        <link rel="stylesheet" href="/public/css/login-styles.css">
+    </head>
+    <body>
+        <%- include('partials/navbar1.ejs')%>
+        <div class="login-container">
+            <h1>Login / Register</h1>
+            <br>
+            <form action="/auth" method="post" class="login-form">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="User Name" id="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password" id="password" required>
+                </div>
+                <input type="submit" value="Login" class="login-button">
+            </form>
+            <br>
+            <h4 class="register-link"><a href="register">Register</a></h4>
+        </div>
+    </body>
+</html>

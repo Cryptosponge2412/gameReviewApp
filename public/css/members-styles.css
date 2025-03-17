@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Members Container */
+.members-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Members Title */
+.members-title {
+    font-size: 24px;
+    color: #ff4d4d; /* Red color for emphasis */
+    margin-bottom: 20px;
+}
+
+/* Members Content */
+.members-content {
+    margin-top: 20px;
+}
+
+.welcome-message {
+    font-size: 16px;
+    color: #007BFF; /* Blue color for the welcome message */
+    margin-bottom: 15px;
+}
+
+.members-message {
+    font-size: 16px;
+    color: #7fae5d; /* Green color for members content */
+    margin-top: 15px;
+}
+
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
